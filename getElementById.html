@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
+    <!-- html code -->
     <h1 id="heading1">I am learning DOM</h1>
-    <input type="text" id="input-text">
+    <input type="text" id="input-text" />
     <button id="change-btn">Change the text</button>
 
     <script>
+      const text = document.getElementById("heading1");
+      const inputText = document.getElementById("input-text");
 
-        const text = document.getElementById("heading1");
-        const inputText = document.getElementById("input-text");
+      const myButton = document.getElementById("change-btn");
 
+      //event listener
+      myButton.addEventListener("click", function () {
+        console.log("Clicked");
+        text.innerHTML = inputText.value;
+      });
 
-        const myButton = document.getElementById("change-btn");
-
-
-        //event listener
-        myButton.addEventListener("click", function() {
-            console.log('Clicked');
-            text.innerHTML = inputText.value
-        })
-
-        console.log(text, myButton)
-
-
-
+      console.log(text, myButton);
     </script>
-    
-</body>
+  </body>
 </html>
+
+<!-- git add -->
+<!-- git commit -m "..." -->
+<!-- git push -->
