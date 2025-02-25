@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+</head>
+<body>
+
+    <h1 id="heading">This text will be changed based on the mouse actions.</h1>
+
+    <script>
+        const text = document.getElementByTagName('heading');  
+         
+        text.addEventListener("mouseover", function () {
+            text.style.color = "green"
+        })
+
+        text.addEventListener("mouseout", function () {
+            text.style.color = "black"
+        })
+
+    </script>
+    
+</body>
+</html>
