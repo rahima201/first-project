@@ -6,28 +6,40 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- html code -->
+    <!-- Heading element with an ID to be manipulated using JavaScript -->
     <h1 id="heading1">I am learning DOM</h1>
+
+    <!-- Input field where users can type text -->
     <input type="text" id="input-text" />
+
+    <!-- Button that triggers a function to change the heading text -->
     <button id="change-btn">Change the text</button>
 
     <script>
+      // Selects the heading element by its ID and stores it in the 'text' variable
       const text = document.getElementById("heading1");
+
+      // Selects the input field by its ID and stores it in the 'inputText' variable
       const inputText = document.getElementById("input-text");
 
+      // Selects the button by its ID and stores it in the 'myButton' variable
       const myButton = document.getElementById("change-btn");
 
-      //event listener
+      // Adds an event listener to the button that listens for a "click" event
       myButton.addEventListener("click", function () {
+        // Logs "Clicked" to the console when the button is clicked
         console.log("Clicked");
+
+        // Updates the heading text with the value entered in the input field
         text.innerHTML = inputText.value;
       });
 
+      // Logs the selected elements to the console for debugging
       console.log(text, myButton);
     </script>
   </body>
 </html>
 
-<!-- git add -->
-<!-- git commit -m "..." -->
+<!-- git add . -->
+<!-- git commit -m "I added" -->
 <!-- git push -->
