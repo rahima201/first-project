@@ -3,21 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM Manipulation</title>
+    <title>document</title>
   </head>
   <body>
+    <!-- A heading that will change when we click the button -->
     <h1 id="heading1">I am learning DOM</h1>
 
+    <!-- A button that will change the text when clicked -->
     <button id="change-btn">Change the text</button>
 
     <script>
+
+      // Get the heading element and save it in a variable
       const text = document.getElementById("heading1");
 
+      // Get the button element and save it in a variable
       const myButton = document.getElementById("change-btn");
 
       //event listener
+      // When the button is clicked, run this function
+      myButton.addEventListener("click", function () {
+        // in the function When I click it will be called/triggered
+        // console.log('clicked')
+        // console.log(5 + 5)
+        // How do I change the text..by using innertext
+
+        // Change the text inside the heading
+        text.innerHTML = "I have learned how to use getElementById"
+        // after clicking the button I can change the value of the element
+
+      })
+
+
+
     </script>
   </body>
 </html>
 
-//cmd //ctrl j
+<!-- //to open file: cmd // 
+ //to open new terminal: ctrl j 
+ //to save codes in github: 1. git add . 2. git commit -m "version1" 3. git push...
+//to see vs code in github: . enter
+//to get something many times use: div*3 enter : .section*3
+
+

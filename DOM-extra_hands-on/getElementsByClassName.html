@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Three sections with the same class name -->
+    <div class="section">First Section</div>
+    <div class="section">Second Section</div>
+    <div class="section">Third Section</div>
+
+    <script>
+      // Get all elements with class "section"
+      const sections = document.getElementsByClassName("section");
+
+      //   how to color or irerate all the button I will use for loop
+
+      // Print the number of sections (should be 3)
+      console.log(sections.length); //will give 3 value when inspect because there are 3 sections
+      //   console.log(sections); //it will return in array
+
+      // Loop through all sections
+      for (let i = 0; i < sections.length; i++) {
+        // Make the second section green
+        if (i == 1) {
+          sections[i].style = "color:green; font-size: 25px"; //how to color
+          // console.log(sections[i]);
+
+          // Make the rest red
+        } else {
+          sections[i].style = "color:red; font-size: 25px"; //how to color
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Event</title>
+  </head>
+  <body>
+    <!-- Heading that will change color when the mouse moves over it -->
+    <h1 id="heading">This text will be changed based on the mouse actions.</h1>
+
+    <script>
+      // Get the heading element
+      const text = document.getElementById("heading");
+
+      // When the mouse moves over the text, it will change color to red
+      text.addEventListener("mouseover", function () {
+        text.style.color = "red";
+      });
+
+      // When the mouse moves away, it will change color back to black
+      text.addEventListener("mouseout", function () {
+        text.style.color = "black";
+      });
+    </script>
+  </body>
+</html>
