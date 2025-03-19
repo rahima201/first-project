@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeyPress</title>
+  </head>
+
+  <body>
+    <!-- Input field where users can type text -->
+    <input type="text" name="" id="text-input" placeholder="Type something" />
+
+    <script>
+      // Select the input field by its ID
+      const input = document.getElementById("text-input");
+
+      //   event listener for keypressing
+      // Add an event listener that triggers when a key is pressed
+      input.addEventListener("keypress", function (event) {
+        console.log(event.key); // Logs the pressed key to the console
+      });
+    </script>
+  </body>
+</html>
