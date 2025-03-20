@@ -1,0 +1,70 @@
+/* Reset default margin, padding, and make sure the box model includes padding and border */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Set background color for the whole page and center text */
+body {
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+/* Styling for the main to-do list container */
+.todo-container {
+  width: 400px;
+  padding: 20px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 20px;
+}
+
+/* Input field styling */
+#task {
+  width: 70%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* Styling for the "Add" button */
+#addTask {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Remove default list styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Styling for each task item */
+li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  border: 1px solid gray;
+  padding: 8px;
+  border-radius: 7px;
+  margin-top: 5px;
+}
+
+/* Styling for the delete button */
+#delete-btn {
+  color: red;
+  cursor: pointer;
+}
+
+/* What this CSS does:
+Centers the to-do list and makes it look neat.
+Styles the input box and button for better appearance.
+Formats the task list so each task is spaced and easy to read.
+Makes the delete button red and clickable. */
